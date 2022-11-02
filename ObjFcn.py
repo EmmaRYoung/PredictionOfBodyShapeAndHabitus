@@ -13,15 +13,16 @@ import csv
 
 
 #define objective function
-def f_1(AJ,KJ): #A: Amass Joints, KR: Kinect Joints
-    ATR = LA.norm(AJ[1] - AJ[4]) #Amass thigh right    
-    ATL = LA.norm(AJ[2] - AJ[5]) #Amass thigh left
+def f_1(AJ,KJ): #objective function for matching body shape with joints
+    #A: SMPL Joints, KR: Kinect Joints
+    ATR = LA.norm(AJ[1] - AJ[4]) #SMPL thigh right    
+    ATL = LA.norm(AJ[2] - AJ[5]) #SMPL thigh left
 
-    ACR = LA.norm(AJ[4] - AJ[7]) #Amass calf right
-    ACL = LA.norm(AJ[5] - AJ[8]) #Amass calf left
+    ACR = LA.norm(AJ[4] - AJ[7]) #SMPL calf right
+    ACL = LA.norm(AJ[5] - AJ[8]) #SMPL calf left
 
-    AFR = LA.norm(AJ[7] - AJ[10]) #Amass foot right
-    AFL = LA.norm(AJ[8] - AJ[11]) #Amass foot left
+    AFR = LA.norm(AJ[7] - AJ[10]) #SMPL foot right
+    AFL = LA.norm(AJ[8] - AJ[11]) #SMPL foot left
 
 
     KTR = LA.norm(KJ[22] - KJ[23]) #Kinect thigh right
@@ -34,11 +35,11 @@ def f_1(AJ,KJ): #A: Amass Joints, KR: Kinect Joints
     KFL = LA.norm(KJ[20] - KJ[21]) #Kinect foot left
 
     #Arms
-    ABR = LA.norm(AJ[16] - AJ[18]) #amass bicept right
-    AF_R = LA.norm(AJ[18] - AJ[20]) #amass forarm right
+    ABR = LA.norm(AJ[16] - AJ[18]) #SMPL bicept right
+    AF_R = LA.norm(AJ[18] - AJ[20]) #SMPL forarm right
 
-    ABL = LA.norm(AJ[17] - AJ[19]) #amass bicept left
-    AF_L = LA.norm(AJ[19] - AJ[21]) #amass forarm left
+    ABL = LA.norm(AJ[17] - AJ[19]) #SMPL bicept left
+    AF_L = LA.norm(AJ[19] - AJ[21]) #SMPL forarm left
 
 
     KBR = LA.norm(KJ[12] - KJ[13]) #kinect bicept right
@@ -48,7 +49,7 @@ def f_1(AJ,KJ): #A: Amass Joints, KR: Kinect Joints
     KF_L = LA.norm(KJ[6] - KJ[7]) #kinect forarm left
 
     #trunk
-    #Amass
+    #SMPL
     #define midpoint between hips
     #mid = (AJ[2]+AJ[1])/2;
     #AT = LA.norm(mid[0] - AJ[12])
@@ -92,7 +93,7 @@ def f_1(AJ,KJ): #A: Amass Joints, KR: Kinect Joints
 
     return fval    
 
-def f_2(AJ,KJ): #objective function for matching pose
+def f_2(AJ,KJ): #objective function for matching pose with skeletal joints
     
     #make sure things are the right size and remove possible 4th column of ones
     try:
@@ -149,7 +150,7 @@ def f_3(xyzSMPL1, xyzKinect, Indices):
 #nearest neighbor comparison
     
     
-    #pull out indices of front and left half    
+    #Pull out only vertices on the front and side. The kinect data doesn't include a small section on the back. 
     xyzSMPL = xyzSMPL1[Indices]
     
     
