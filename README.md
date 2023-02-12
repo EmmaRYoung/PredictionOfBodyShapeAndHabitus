@@ -26,17 +26,20 @@ This project would not be possible without Abigail Eustace's thesis about the Az
 <img src="https://user-images.githubusercontent.com/67296859/218335721-773a28ee-151d-4f4f-898f-1d0a5e3b2c97.png"> <img src="https://user-images.githubusercontent.com/67296859/218336082-f8533844-a78c-4c27-a1dd-93a7a89dd167.png">
 
 2. Recreate missing sections of the subject point cloud (PC).
-Originally, the subject PC only includes data of the front and right side. The left side is created by mirroring the right side data. The back is estimated by connecting the back most points on the left and right side. Then, the pointcloud is downsampled.  
+Originally, the subject PC only includes data of the front and right side. The left side is created by mirroring the right side data. The back is estimated by connecting the back most points on the left and right side. Then, the pointcloud is downsampled. Code for this data processing method is not included here.   
 
 ![S01PC_FrontRight](https://user-images.githubusercontent.com/67296859/218339779-504152bc-6263-45f4-8fa3-55f54e3a942d.gif)
 
 
 3. Remove vertices from the template SMPL mesh that correspond to incomplete PC data. Removed indices are shown in red on the template male SMPL model below.
-Regions of incomplete PC data are the upper back, back of arms, and back of legs.
+Regions of incomplete PC data are the upper back, back of arms, and back of legs. 4136 of the 6890 vertices remain.
 ![image](https://user-images.githubusercontent.com/67296859/218335092-cf6a6f0b-09e5-4930-8109-83e0a0b8f7b4.png) 
 
 
-4. Deform the modified SMPL mesh out to the subject point cloud using a deformable CPD algorithm from cycpd. Recover a SMPL model that most closely matches this new instance. 
+4. Deform the modified SMPL mesh out to the subject point cloud using a deformable CPD algorithm from cycpd. Recover a SMPL model that most closely matches the principal component scores (Betas) of this new instance. 
+![image](https://user-images.githubusercontent.com/67296859/218341618-ae6c9b8e-90b9-4036-b5da-f898fabecf4e.png)
+![image](https://user-images.githubusercontent.com/67296859/218341147-8025c4ad-e242-4914-abdb-43c79f6b6581.png)
+
 
 5. Perform a zero-th order optimization to further refine the body model. The objective function uses a KNN algorithm to minimize the distance between the SMPL mesh and subject point cloud.  
 
