@@ -39,5 +39,6 @@ This project would not be possible without Abigail Eustace's thesis about the Az
 ![S20Gif](https://user-images.githubusercontent.com/67296859/218332629-72865de4-bc88-4301-b0c6-f64767d11ad8.gif)
 ![S16Gif](https://user-images.githubusercontent.com/67296859/218332677-bff3f9f8-f339-4d18-8f1b-b96dddca54a6.gif)
 ![S05Gif 1](https://user-images.githubusercontent.com/67296859/218332913-d2bb02e3-c7d7-4d5c-b061-9c60496adec5.gif)
+![S06Gif](https://user-images.githubusercontent.com/67296859/218333127-aedc46b3-5035-4a0f-8ba6-bf6774e34685.gif)
 ![S22Gif](https://user-images.githubusercontent.com/67296859/218332864-4648edcc-d5fa-4eaa-b31e-38d3a80d3038.gif)
 
