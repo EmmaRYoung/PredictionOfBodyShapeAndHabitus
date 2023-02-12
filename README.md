@@ -1,6 +1,8 @@
 # PredictionOfBodyShape_SMPL
 Thesis (in progress) work to develop a noninvasive way of predicting a subject's body shape using data from Azure Kinect depth cameras and the SMPL body model.
+
 View my ORS poster presentation here: YOUTUBE
+
 Download a PDF of the poster here: tinyurl.com/bdctxjku
 
 # Acknowledgements 
@@ -12,7 +14,7 @@ Peter Laz, Casey Myers, Paul Rullkoetter, Thor Andreassen
 
 This project would not be possible without Abigail Eustace's thesis about the Azure Kinect camera. Thank you for your hard work
 
-#Requirements
+# Requirements
 The SMPL body model and its requirements: https://smpl.is.tue.mpg.de/
 
 cycpd: https://github.com/gattia/cycpd
