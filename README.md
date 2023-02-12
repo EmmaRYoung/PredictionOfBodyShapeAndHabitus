@@ -1,19 +1,19 @@
 # PredictionOfBodyShape_SMPL
-Thesis (in progress) work to develop a noninvasive way of predicting a subject's body shape using data from Azure Kinect depth cameras.
+Thesis (in progress) work to develop a noninvasive way of predicting a subject's body shape using data from Azure Kinect depth cameras and the SMPL body model.
+View my ORS poster presentation here: YOUTUBE
+Download a PDF of the poster here: tinyurl.com/bdctxjku
 
 # Acknowledgements 
 This project was supported in part by a DU Professional Research Opportunities for Faculty grant
+Thank you to my colleagues for their expert advice and support:
+Peter Laz, Casey Myers, Paul Rullkoetter, Thor Andreassen
+This project would not be possible without Abigail Eustace's thesis about the Azure Kinect camera. Thank you for your hard work
 
+#Requirements
+The SMPL body model and its requirements: https://smpl.is.tue.mpg.de/
+cycpd: https://github.com/gattia/cycpd
 
-The SMPL body model: https://smpl.is.tue.mpg.de/
-
-The model is described by two parameters:
-
-1. Shape - 10 Parameters that control the surface mesh and interal joint positions
-
-2. Pose - 63 Parameters that articulate the model at 21 joints
-
-# Optimization process
+# Workflow
 Currently, I use a multiphase optimization process to align the SMPL body with personalized Kinect data. The first two phases take advantage of the similarities between the SMPL and the Kinect skeleton to roughly position the SMPL model inside the Kinect depth data. A registry of similar limb lengths and joints is created for the Kinect and SMPL skeletons (KRL,SRL and SRJ, KRJ respectively)
 
 1. Minimize the distance between limb lengths
