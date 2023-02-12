@@ -5,12 +5,16 @@ Download a PDF of the poster here: tinyurl.com/bdctxjku
 
 # Acknowledgements 
 This project was supported in part by a DU Professional Research Opportunities for Faculty grant
+
 Thank you to my colleagues for their expert advice and support:
+
 Peter Laz, Casey Myers, Paul Rullkoetter, Thor Andreassen
+
 This project would not be possible without Abigail Eustace's thesis about the Azure Kinect camera. Thank you for your hard work
 
 #Requirements
 The SMPL body model and its requirements: https://smpl.is.tue.mpg.de/
+
 cycpd: https://github.com/gattia/cycpd
 
 # Workflow
