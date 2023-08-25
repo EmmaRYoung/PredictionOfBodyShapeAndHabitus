@@ -22,14 +22,14 @@ Thank you Mom!
 [The SMPL body model and its requirements](https://smpl.is.tue.mpg.de/)
 
 [cycpd](https://github.com/gattia/cycpd)
-* My code uses a proprietary radial basis function (RBF) method to perform mesh morphing quickly. This code is not included in this repo. Comperable results can be achieved using this coherent point drift (CPD) library
+* My code uses a proprietary radial basis function (RBF) method to perform mesh morphing quickly. This code is not included in this repo. Comperable results can be achieved using this coherent point drift (CPD) library.
 
 [sklearn](https://scikit-learn.org/stable/index.html) 
 
 # Methods
 ## High level overview
 
-![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/f5073bb3-79f5-4cfc-8d9f-55f9f6790944| width=100)
+![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/f5073bb3-79f5-4cfc-8d9f-55f9f6790944| width=50)
 
 
 1. "Scan" subject with two azure kinect cameras and physically collect anthropometric measures with a tailor's tape for validation.
@@ -41,9 +41,6 @@ Thank you Mom!
 | ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/6d48fa08-811f-46e5-bc21-cdb5aef4b2b0)
 | :--:
 | Resulting point cloud after two views are combined
-
-
-
 
 
 2. Recreate missing sections of the subject point cloud (PC).
