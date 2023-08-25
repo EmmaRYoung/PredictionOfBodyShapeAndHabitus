@@ -2,7 +2,8 @@
 Thesis work to develop a noninvasive way of predicting a subject's body shape using data from Azure Kinect depth cameras and the SMPL body model.
 
 [Download a PDF of the poster here](https://tinyurl.com/bdctxjku)
-[Read and download my thesis here](https://tinyurl.com/bdctxjku)
+
+[Read and download my thesis here](https://drive.google.com/file/d/1UIxTO5GQUA-y_OyL3k18OsFqECO7deuA/view?usp=drive_link)
 
 # Acknowledgements 
 This project was supported in part by a University of Denver Professional Research Opportunities for Faculty grant
