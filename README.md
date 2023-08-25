@@ -22,16 +22,19 @@ Thank you Mom!
 [The SMPL body model and its requirements](https://smpl.is.tue.mpg.de/)
 
 [cycpd](https://github.com/gattia/cycpd)
+* My code uses a proprietary radial basis function (RBF) method to perform mesh morphing quickly. This code is not included in this repo. Comperable results can be achieved using this coherent point drift (CPD) library
 
 [sklearn](https://scikit-learn.org/stable/index.html) 
 
-# Workflow
+# Methods
 1. "Scan" subject with two azure kinect cameras and physically collect anthropometric measures with a tailor's tape for validation. 
-<img src="https://user-images.githubusercontent.com/67296859/218335637-c1b7cd65-74be-480b-ba8d-bef8fc3f2924.png" width=80% height=80%> 
+![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/37651069-8549-4409-8dc1-9bf2df121769)
 
-<img src="https://user-images.githubusercontent.com/67296859/218335721-773a28ee-151d-4f4f-898f-1d0a5e3b2c97.png"> <img src="https://user-images.githubusercontent.com/67296859/218336082-f8533844-a78c-4c27-a1dd-93a7a89dd167.png">
+![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/6d48fa08-811f-46e5-bc21-cdb5aef4b2b0)
 
-![image](https://user-images.githubusercontent.com/67296859/218507302-db8d16e3-7cf8-4253-900d-49a42e78a8bb.png)
+
+
+
 
 2. Recreate missing sections of the subject point cloud (PC).
 Originally, the subject PC only includes data of the front and right side. The left side is created by mirroring the right side data. The back is estimated by connecting the back most points on the left and right side. Then, the pointcloud is downsampled. Code for this data processing method is not included here.   
