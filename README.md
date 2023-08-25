@@ -31,7 +31,7 @@ Thank you Mom!
 
 ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/f5073bb3-79f5-4cfc-8d9f-55f9f6790944)
 
-
+## Data collection and post processing
 1. "Scan" subject with two azure kinect cameras and physically collect anthropometric measures with a tailor's tape for validation.
    
 | ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/37651069-8549-4409-8dc1-9bf2df121769)
@@ -52,14 +52,26 @@ Originally, the subject PC only includes data of the front and right side. The l
 
 ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/bccc00c0-bc33-4fe2-8d7f-9b40e85108e7)
 
+## Rigid alignment
 
-
-3. Remove vertices from the template SMPL mesh that correspond to incomplete PC data. Removed indices are shown in red on the template male SMPL model below.
+1. Remove vertices from the template SMPL mesh that correspond to incomplete PC data. Removed indices are shown in red on the template male SMPL model below.
 Regions of incomplete PC data are the upper back, back of arms, and back of legs. 4136 of the 6890 vertices remain.
 ![image](https://user-images.githubusercontent.com/67296859/218335092-cf6a6f0b-09e5-4930-8109-83e0a0b8f7b4.png) 
 
+2. Align Kinect point cloud and joints with the SMPL mesh vertices and joints.
+* Kabsch for rough alignment - Align Kinect joints with SMPL skeleton
+| ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/3a8517c0-2a40-4d0d-b6e7-0aeaa977bf78)
+| :--:
+| Kinect data is initially in a different coordinate system to the SMPL model
 
-4. Deform the modified SMPL mesh out to the subject point cloud using a deformable CPD algorithm from cycpd. Recover a SMPL model that most closely matches the principal component scores (Betas) of this new instance. 
+
+![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/d83f30ca-2c86-4739-a033-bf928e0b2fa7)
+
+  
+* ICP for fine refinement - Align Kinect point cloud with SMPL mesh vertices
+
+## Mesh morphing
+2. Deform the modified SMPL mesh out to the subject point cloud using a deformable CPD algorithm from cycpd. Recover a SMPL model that most closely matches the principal component scores (Betas) of this new instance. 
 ![image](https://user-images.githubusercontent.com/67296859/218341618-ae6c9b8e-90b9-4036-b5da-f898fabecf4e.png)
 ![image](https://user-images.githubusercontent.com/67296859/218341147-8025c4ad-e242-4914-abdb-43c79f6b6581.png)
 
