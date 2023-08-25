@@ -1,9 +1,8 @@
 # PredictionOfBodyShape_SMPL
 Thesis work to develop a noninvasive way of predicting a subject's body shape using data from Azure Kinect depth cameras and the SMPL body model.
 
-(Coming soon) Digital version of my Orthopaedic Research Society 2023 poster presentation
-
 [Download a PDF of the poster here](https://tinyurl.com/bdctxjku)
+[Read and download my thesis here](https://tinyurl.com/bdctxjku)
 
 # Acknowledgements 
 This project was supported in part by a University of Denver Professional Research Opportunities for Faculty grant
