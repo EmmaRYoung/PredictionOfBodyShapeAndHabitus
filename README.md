@@ -28,9 +28,13 @@ Thank you Mom!
 
 # Methods
 1. "Scan" subject with two azure kinect cameras and physically collect anthropometric measures with a tailor's tape for validation. 
-![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/37651069-8549-4409-8dc1-9bf2df121769)
+| ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/37651069-8549-4409-8dc1-9bf2df121769)
+| :--:
+| Camera placement for data collection
 
-![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/6d48fa08-811f-46e5-bc21-cdb5aef4b2b0)
+| ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/6d48fa08-811f-46e5-bc21-cdb5aef4b2b0)
+| :--:
+| Resulting point cloud after two views are combined
 
 
 
