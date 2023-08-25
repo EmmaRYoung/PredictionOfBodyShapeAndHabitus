@@ -27,6 +27,11 @@ Thank you Mom!
 [sklearn](https://scikit-learn.org/stable/index.html) 
 
 # Methods
+## High level overview
+
+![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/f5073bb3-79f5-4cfc-8d9f-55f9f6790944)
+
+
 1. "Scan" subject with two azure kinect cameras and physically collect anthropometric measures with a tailor's tape for validation.
    
 | ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/37651069-8549-4409-8dc1-9bf2df121769)
@@ -44,11 +49,11 @@ Thank you Mom!
 2. Recreate missing sections of the subject point cloud (PC).
 Originally, the subject PC only includes data of the front and right side. The left side is created by mirroring the right side data. The back is estimated by connecting the back most points on the left and right side. Then, the pointcloud is downsampled. Code for this data processing method is not included here.   
 
-![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/d2d80355-44cf-46ab-8d94-e894560eb142)
+![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/afb5db8f-88e4-4102-9929-73d4a46d09c7)
 
-![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/cc9858fc-2f4c-42be-a69b-655cab38ccba)
+![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/3ad577d7-4cf2-4031-a0ec-5da666f1c93d)
 
-![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/14747cfa-5641-479d-9e9c-1b39dfb06df3)
+![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/bccc00c0-bc33-4fe2-8d7f-9b40e85108e7)
 
 
 
