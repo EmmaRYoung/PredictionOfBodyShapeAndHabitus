@@ -5,7 +5,7 @@ Thesis work to develop a noninvasive way of predicting a subject's body shape us
 
 [Download my thesis through ProQuest](https://www.proquest.com/docview/2840141315)
 
-Please contact me if you need a full PDF emma.young.r@gmail.com
+Please contact me if you are unable to access the full manuscript: emma.young.r@gmail.com OR emma.r.young@du.edu
 
 # Acknowledgements 
 This project was supported in part by a University of Denver Professional Research Opportunities for Faculty grant
@@ -15,6 +15,8 @@ Thank you to my colleagues for their expert advice and support:
 Peter Laz, Casey Myers, Paul Rullkoetter
 
 This project would not be possible without Abigail Eustace's thesis about the Azure Kinect camera. Thank you for your hard work!
+
+Thank you Mom!
 
 # Requirements
 [The SMPL body model and its requirements](https://smpl.is.tue.mpg.de/)
@@ -34,7 +36,11 @@ This project would not be possible without Abigail Eustace's thesis about the Az
 2. Recreate missing sections of the subject point cloud (PC).
 Originally, the subject PC only includes data of the front and right side. The left side is created by mirroring the right side data. The back is estimated by connecting the back most points on the left and right side. Then, the pointcloud is downsampled. Code for this data processing method is not included here.   
 
-![S01PC_PCProcessing](https://user-images.githubusercontent.com/67296859/218505692-8b2d90a8-90e7-4096-bcbc-51f3caf147d6.gif)
+![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/d2d80355-44cf-46ab-8d94-e894560eb142)
+
+![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/cc9858fc-2f4c-42be-a69b-655cab38ccba)
+
+![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/14747cfa-5641-479d-9e9c-1b39dfb06df3)
 
 
 
