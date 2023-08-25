@@ -3,7 +3,9 @@ Thesis work to develop a noninvasive way of predicting a subject's body shape us
 
 [Download a PDF of the poster here](https://tinyurl.com/bdctxjku)
 
-[Download my thesis here](https://www.proquest.com/docview/2840141315)
+[Download my thesis through ProQuest](https://www.proquest.com/docview/2840141315)
+
+Please contact me if you need a full PDF emma.young.r@gmail.com
 
 # Acknowledgements 
 This project was supported in part by a University of Denver Professional Research Opportunities for Faculty grant
