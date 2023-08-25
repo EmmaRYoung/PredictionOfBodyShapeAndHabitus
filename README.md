@@ -27,7 +27,8 @@ Thank you Mom!
 [sklearn](https://scikit-learn.org/stable/index.html) 
 
 # Methods
-1. "Scan" subject with two azure kinect cameras and physically collect anthropometric measures with a tailor's tape for validation. 
+1. "Scan" subject with two azure kinect cameras and physically collect anthropometric measures with a tailor's tape for validation.
+   
 | ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/37651069-8549-4409-8dc1-9bf2df121769)
 | :--:
 | Camera placement for data collection
