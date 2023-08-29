@@ -57,18 +57,27 @@ Originally, the subject PC only includes data of the front and right side. The l
 
 1. Remove vertices from the template SMPL mesh that correspond to incomplete PC data. Removed indices are shown in red on the template male SMPL model below.
 Regions of incomplete PC data are the upper back, back of arms, and back of legs. 4136 of the 6890 vertices remain.
+
 ![image](https://user-images.githubusercontent.com/67296859/218335092-cf6a6f0b-09e5-4930-8109-83e0a0b8f7b4.png) 
 
 2. Align Kinect point cloud and joints with the SMPL mesh vertices and joints.
 * Kabsch for rough alignment - Align Kinect joints with SMPL skeleton
+  
 | ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/3a8517c0-2a40-4d0d-b6e7-0aeaa977bf78)
 | :--:
 | Kinect data is initially in a different coordinate system to the SMPL model
 
 
-![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/d83f30ca-2c86-4739-a033-bf928e0b2fa7)
-  
+| ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/d83f30ca-2c86-4739-a033-bf928e0b2fa7)
+| :--:
+| The transformation matrix found from the Kabsch algorithm is applied to the Kinect skeleton (left) and also the Kinect subject point cloud (right)
+
 * ICP for fine refinement - Align Kinect point cloud with SMPL mesh vertices
+  
+| ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/6c9848ee-0e20-4196-b58a-b3be51d4ada2)
+| :--:
+| caption
+
 
 ### RBF Mesh Morphing
 2. Deform the modified SMPL mesh out to the subject point cloud using a deformable CPD algorithm from cycpd. Recover a SMPL model that most closely matches the principal component scores (Betas) of this new instance. 
