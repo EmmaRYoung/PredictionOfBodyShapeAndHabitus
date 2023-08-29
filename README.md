@@ -29,7 +29,8 @@ Thank you Mom!
 # Methods
 ## High level overview
 
-![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/f5073bb3-79f5-4cfc-8d9f-55f9f6790944)
+![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/690f1c11-27bc-4756-b532-5da98f765411)
+
 
 ## Data collection and post processing
 1. "Scan" subject with two azure kinect cameras and physically collect anthropometric measures with a tailor's tape for validation.
