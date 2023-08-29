@@ -74,15 +74,15 @@ Regions of incomplete PC data are the upper back, back of arms, and back of legs
 
 * ICP for fine refinement - Align Kinect point cloud with SMPL mesh vertices
   
-| ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/6c9848ee-0e20-4196-b58a-b3be51d4ada2)
-| :--:
-| caption
+![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/6c9848ee-0e20-4196-b58a-b3be51d4ada2)
+
 
 
 ### RBF Mesh Morphing
-2. Deform the modified SMPL mesh out to the subject point cloud using a deformable CPD algorithm from cycpd. Recover a SMPL model that most closely matches the principal component scores (Betas) of this new instance. 
-![image](https://user-images.githubusercontent.com/67296859/218341618-ae6c9b8e-90b9-4036-b5da-f898fabecf4e.png)
-![image](https://user-images.githubusercontent.com/67296859/218341147-8025c4ad-e242-4914-abdb-43c79f6b6581.png)
+Deform the modified SMPL mesh out to the subject point cloud using a radial basis mesh morphing code. This is not provided, but comparable results can be achieved with a CPD algorithm 
+![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/6550671d-f4e3-4023-8531-3eeb6cdd9fe6)
+
+
 
 
 ### Optimization
