@@ -80,8 +80,13 @@ Regions of incomplete PC data are the upper back, back of arms, and back of legs
 
 ### RBF Mesh Morphing
 Deform the modified SMPL mesh out to the subject point cloud using a radial basis mesh morphing code. This is not provided, but comparable results can be achieved with a CPD algorithm 
+
 ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/6550671d-f4e3-4023-8531-3eeb6cdd9fe6)
 
+
+Extract the principal component scores, or betas, associated with a new instance using the eigen vector matrix provided in the SMPL Python scripts. 
+
+![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/e675749c-4bd6-47cf-b209-4a43d6dbcd67)
 
 
 
