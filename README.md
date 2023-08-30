@@ -150,7 +150,12 @@ The average absolute percent error for every measure
 | Thigh Lower | 9.19 | 5.12
 | Ankle | 9.80 | 6.33
 
+Computational time of model fitting in seconds
+| Rigid Alignment | Morphing | Initial Model Estimation | Pose Optimization | KNN Optimization | Final Time
+| :--: | :--: | :--: | :--: | :--: | :--:
+| 4 | 29 | 0.01 | 3 | 264 | 300
 
+## Examples of Optimized SMPL Models 
 
 ![S11Gif](https://user-images.githubusercontent.com/67296859/218332432-0edd0de7-8b55-4e26-bb3a-1f9f71b6c103.gif) 
 ![S20Gif](https://user-images.githubusercontent.com/67296859/218332629-72865de4-bc88-4301-b0c6-f64767d11ad8.gif)
