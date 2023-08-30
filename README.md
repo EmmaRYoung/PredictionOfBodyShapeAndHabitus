@@ -7,6 +7,8 @@ Thesis work to develop a noninvasive way of predicting a subject's body shape us
 
 Please contact me if you are unable to access the full manuscript: emma.young.r@gmail.com OR emma.r.young@du.edu
 
+![S02Gif](https://user-images.githubusercontent.com/67296859/218332402-98c949fc-e8ad-4844-a71b-65745d4b6e06.gif) 
+
 # Acknowledgements 
 This project was supported in part by a University of Denver Professional Research Opportunities for Faculty grant
 
@@ -46,8 +48,6 @@ Thank you Mom!
 | ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/2bddacd5-aa60-4761-aa12-5aa57638d465) | ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/942f966d-0095-4b94-b5c3-cc2f992f3804) | ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/ffacb928-759d-4ff2-abd5-3b4cbcef951c)
 | :--: | :--: | :--:
 | The circumference measurements taken of each subject | The length measurements taken of each subject | The alternative chest measurements taken of female subjects
-
-
 
 
 2. Recreate missing sections of the subject point cloud (PC).
@@ -151,7 +151,6 @@ The average absolute percent error for every measure
 
 
 
-![S02Gif](https://user-images.githubusercontent.com/67296859/218332402-98c949fc-e8ad-4844-a71b-65745d4b6e06.gif) 
 ![S11Gif](https://user-images.githubusercontent.com/67296859/218332432-0edd0de7-8b55-4e26-bb3a-1f9f71b6c103.gif) 
 ![S20Gif](https://user-images.githubusercontent.com/67296859/218332629-72865de4-bc88-4301-b0c6-f64767d11ad8.gif)
 ![S16Gif](https://user-images.githubusercontent.com/67296859/218332677-bff3f9f8-f339-4d18-8f1b-b96dddca54a6.gif)
