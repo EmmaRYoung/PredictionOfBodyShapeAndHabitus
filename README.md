@@ -45,6 +45,7 @@ Thank you Mom!
 | :--:
 | Resulting point cloud after two views are combined
 
+Anthropometric measures
 | ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/2bddacd5-aa60-4761-aa12-5aa57638d465) | ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/942f966d-0095-4b94-b5c3-cc2f992f3804) | ![image](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/ffacb928-759d-4ff2-abd5-3b4cbcef951c)
 | :--: | :--: | :--:
 | The circumference measurements taken of each subject | The length measurements taken of each subject | The alternative chest measurements taken of female subjects
