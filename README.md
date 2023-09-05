@@ -7,7 +7,7 @@ Thesis work to develop a noninvasive way of predicting a subject's body shape us
 
 Please contact me if you are unable to access the full manuscript: emma.young.r@gmail.com OR emma.r.young@du.edu
 
-![S02Gif](https://user-images.githubusercontent.com/67296859/218332402-98c949fc-e8ad-4844-a71b-65745d4b6e06.gif) 
+![S03Gif](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/6356c95f-696d-48d0-ae2c-4f89385a00ef)
 
 # Acknowledgements 
 This project was supported in part by a University of Denver Professional Research Opportunities for Faculty grant
@@ -150,17 +150,16 @@ The average absolute percent error for every measure
 | Thigh Lower | 9.19 | 5.12
 | Ankle | 9.80 | 6.33
 
-Computational time of model fitting in seconds
+Computational time of model fitting in seconds - results in 5 minutes!
 | Rigid Alignment | Morphing | Initial Model Estimation | Pose Optimization | KNN Optimization | Final Time
 | :--: | :--: | :--: | :--: | :--: | :--:
 | 4 | 29 | 0.01 | 3 | 264 | 300
 
 ## Examples of Optimized SMPL Models 
 
-![S11Gif](https://user-images.githubusercontent.com/67296859/218332432-0edd0de7-8b55-4e26-bb3a-1f9f71b6c103.gif) 
-![S20Gif](https://user-images.githubusercontent.com/67296859/218332629-72865de4-bc88-4301-b0c6-f64767d11ad8.gif)
-![S16Gif](https://user-images.githubusercontent.com/67296859/218332677-bff3f9f8-f339-4d18-8f1b-b96dddca54a6.gif)
-![S05Gif 1](https://user-images.githubusercontent.com/67296859/218332913-d2bb02e3-c7d7-4d5c-b061-9c60496adec5.gif)
-![S06Gif](https://user-images.githubusercontent.com/67296859/218333127-aedc46b3-5035-4a0f-8ba6-bf6774e34685.gif)
-![S22Gif](https://user-images.githubusercontent.com/67296859/218332864-4648edcc-d5fa-4eaa-b31e-38d3a80d3038.gif)
+![S06Gif](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/0822cfd1-557d-49b7-8589-eed14bc3ea6d)
+![S07Gif](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/78a1ac24-3dd9-4fc3-acd1-635bd8bf6a70)
+![S16Gif](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/2c978f39-02b4-44c9-9c3e-e55ce0062ea1)
+![S19Gif](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/715498c3-5c69-4ee7-ba1f-f248e649d3d2)
+![S22Gif](https://github.com/EmmaRYoung/PredictionOfBodyShape_SMPL/assets/67296859/f4e1b16e-618f-4e62-85f9-dc8c9d2aee04)
 
